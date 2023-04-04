@@ -1,14 +1,10 @@
 # VBA-challenge
-VBA code
-
+VBA code.
 
 Sub StockChange()
     For Each ws In Worksheets
         WorksheetName = ws.Name
-        'ws.Columns("I:R").Clear
-        'Exit Sub
-        
-        
+
         'Naming the column
         ws.Cells(1, "I").Value = "Ticker"
         ws.Cells(1, "J").Value = "Yearly Change"
